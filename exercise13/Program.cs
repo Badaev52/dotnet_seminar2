@@ -7,9 +7,9 @@ Console.WriteLine();
 
 num = Convert.ToInt32(str);
 
-num = num / 100;
-
-if (num > 0){    
+if ((num / 100) > 0){
+    num = num % 1000;
+    num = num / 100;    
     Console.WriteLine("Третья цифра: " + num);
 }else{
     Console.WriteLine("Третьей цифры нет!");
